@@ -49,4 +49,13 @@
     <location>/error.jsp</location>
   </error-page>
   
+  <filter>
+    <filter-name>XFrameOptionsFilter</filter-name>
+    <filter-class>control.XFrameOptionsFilter</filter-class>
+  </filter>
+  <filter-mapping>
+	<filter-name>XFrameOptionsFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+    
 </web-app>
